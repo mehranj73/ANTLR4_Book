@@ -23,6 +23,16 @@
           <option name="language" value="" />
           <option name="generateVisitor" value="true" />
         </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/antlr/LabeledExpr.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="D:\Projects\IdeaProjects\ANTLR4_Book\src\main\java" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
       </list>
     </option>
   </component>
