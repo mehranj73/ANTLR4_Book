@@ -17,8 +17,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    antlr("org.antlr:antlr4:4.10.1")
-    implementation("org.antlr:antlr4-runtime:4.10.1")
+    antlr("org.antlr:antlr4:4.11.1")
+    implementation("org.antlr:antlr4-runtime:4.11.1")
 }
 
 tasks.test {
@@ -39,8 +39,8 @@ configurations[JavaPlugin.API_CONFIGURATION_NAME].let { apiConfiguration ->
 
 tasks.generateGrammarSource {
     maxHeapSize = "64m"
-    arguments = arguments + listOf("-no-listener", "-visitor", "-package", "com.mehranj73")
-    outputDirectory = File("${project.buildDir}/generated-src/antlr/main/com.mehranj73")
+    arguments = arguments + listOf("-no-visitor")
+    outputDirectory = File("src/main/java")
 }
 tasks.named("compileKotlin").configure { dependsOn(tasks.generateGrammarSource) }
 
